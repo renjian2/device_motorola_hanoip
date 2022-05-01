@@ -1,0 +1,5 @@
+# All unpinned blobs below are extracted from nio S1RN32.19
+
+# Touchscreen firmware
+vendor/firmware/FW_ILITEK_TDDI_TM.bin:recovery/root/vendor/firmware/FW_ILITEK_TDDI_TM.bin
+
