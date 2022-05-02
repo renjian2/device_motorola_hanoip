@@ -242,20 +242,21 @@ vendor/lib64/libvidhance_stabilizer.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 
 # Camera-configs
+vendor/etc/camera/aec_golden_depth.bin
+vendor/etc/camera/aec_golden_depth_64M.bin
+vendor/etc/camera/aec_golden_wide.bin
+vendor/etc/camera/aec_golden_wide_64M.bin
 vendor/etc/camera/arcsoft_calibration_u_dc.bin
-vendor/etc/camera/arcsoft_standalone_calibration_u_dc.bin
 vendor/etc/camera/dual_golden_depth.bin
+vendor/etc/camera/dual_golden_depth_64M.bin
 vendor/etc/camera/dual_golden_wide.bin
+vendor/etc/camera/dual_golden_wide_64M.bin
 vendor/etc/camera/vidhance_calibration
+vendor/etc/camera/vidhance_calibration_64
+
 
 # Camera (Firmware)
 vendor/firmware/CAMERA_ICP.elf
-
-# Camera (Moto desktop)
-vendor/bin/hw/motorola.hardware.camera.desktop@2.0-service
-vendor/etc/init/motorola.hardware.camera.desktop@2.0-service.rc
-vendor/lib64/motorola.hardware.camera.desktop@1.0.so
-vendor/lib64/motorola.hardware.camera.desktop@2.0.so
 
 # Camera (Permissions)
 product/etc/permissions/com.motorola.camera3.content.ai.xml
@@ -284,8 +285,8 @@ vendor/lib64/libsysmon_cdsp_skel.so
 -vendor/app/CneApp/CneApp.apk
 -vendor/app/IWlanService/IWlanService.apk
 vendor/bin/cnd
-vendor/etc/cne/mwqem.conf
-vendor/etc/cne/profileMwqem.xml
+vendor/etc/cne/slm.conf
+vendor/etc/cne/profileSlm.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile3.xml
@@ -364,7 +365,7 @@ vendor/lib64/libsdmextension.so
 vendor/lib64/libtinyxml2_1.so
 
 # Display (Calibration Data)
-vendor/etc/qdcm_calib_data_mipi_mot_vid_tm_1080x2520_670.xml
+vendor/etc/qdcm_calib_data_mipi_mot_vid_tm_ili7807s_fhd_678.xml
 
 # Display postprocessing
 vendor/bin/hw/vendor.display.color@1.0-service
@@ -445,10 +446,8 @@ vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/bin/loc_launcher
 vendor/bin/lowi-server
 vendor/bin/mlid
-vendor/bin/tloc_daemon
 vendor/bin/xtra-daemon
 vendor/etc/cacert_location.pem
-vendor/etc/init/tloc_daemon.rc
 -vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
 vendor/etc/xtra_root_cert.pem
 vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so
@@ -769,7 +768,6 @@ vendor/bin/qrtr-cfg
 vendor/bin/qrtr-ns
 vendor/bin/qti
 vendor/bin/rmt_storage
-vendor/bin/ssgtzd
 vendor/bin/tftp_server
 vendor/etc/data/dsi_config.xml
 vendor/etc/data/netmgr_config.xml
@@ -780,7 +778,6 @@ vendor/etc/init/ipa_fws.rc
 vendor/etc/init/netmgrd.rc
 vendor/etc/init/port-bridge.rc
 vendor/etc/init/qcrild.rc
-vendor/etc/init/ssgtzd.rc
 vendor/etc/init/vendor.mmi.carrier.rc
 vendor/etc/init/vendor.qti.rmt_storage.rc
 vendor/etc/init/vendor.qti.tftp.rc
@@ -949,11 +946,9 @@ vendor/lib64/vendor.qti.imsrtpservice@3.0.so
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
 vendor/bin/init.qcom.sensors.sh
 vendor/bin/sensors.qti
-vendor/bin/sscrpcd
 vendor/etc/init/init.vendor.sensors.rc
 vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc
 vendor/etc/init/vendor.sensors.qti.rc
-vendor/etc/init/vendor.sensors.sscrpcd.rc
 vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml
 vendor/etc/sensors/hals.conf
 vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
@@ -1264,7 +1259,6 @@ system_ext/lib64/libwfduibcsrcinterface.so
 vendor/bin/wfdhdcphalservice
 vendor/bin/wfdvndservice
 vendor/bin/wifidisplayhalservice
-vendor/etc/ArmHDCP_QTI_Android.cfg
 vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc
 vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc
 vendor/etc/init/wfdvndservice.rc
