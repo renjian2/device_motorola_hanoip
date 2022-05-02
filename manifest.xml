@@ -896,4 +896,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <fqname>@3.0::IMapper/default</fqname>
         <fqname>@4.0::IMapper/default</fqname>
     </hal>
+    <hal format="aidl">
+        <name>android.hardware.power</name>
+        <fqname>IPower/default</fqname>
+    </hal>
 </manifest>
