@@ -21,3 +21,6 @@ recovery_only(`
   allow init self:capability sys_module;
   allow init rootfs:system module_load;
 ')
+allow init debugfs_tracing_debug:dir { mounton };
+allow init sysfs:file { open  setattr  write };
+allow init vendor_file:file { execute  execute_no_trans };
