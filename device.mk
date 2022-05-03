@@ -402,7 +402,9 @@ PRODUCT_PACKAGES += \
 # Net
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor \
-    netutils-wrapper-1.0
+    libloc_net_iface \
+    netutils-wrapper-1.0 \
+    libloc_net_iface.vendor
 
 # Neural networks
 PRODUCT_PACKAGES += \
@@ -434,7 +436,8 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libOmxVidcCommon \
-    libstagefrighthw
+    libstagefrighthw \
+    libstagefrighthw.vendor
 
 # Perf
 PRODUCT_PACKAGES += \
