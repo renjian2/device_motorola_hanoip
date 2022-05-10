@@ -23,6 +23,13 @@ $(call inherit-product, device/motorola/sm6150-common/common.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/motorola/hanoip/hanoip-vendor.mk)
 
+# A/B
+AB_OTA_PARTITIONS += \
+    product \
+    system_ext \
+    vbmeta_system \
+    vendor_boot
+
 # Properties
 -include $(LOCAL_PATH)/properties.mk
 
