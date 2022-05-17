@@ -55,6 +55,7 @@ PRODUCT_COPY_FILES += \
 
 # Init
 PRODUCT_PACKAGES += \
+    init.mmi.laser.sh \
     init.mmi.overlay.rc \
     init.oem.fingerprint.sh \
     init.oem.fingerprint2.sh
