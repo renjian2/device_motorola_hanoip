@@ -1,2 +1,0 @@
-allow fsck fsck:capability { kill };
-allow fsck vendor_prodpersist_block_device:blk_file { read };

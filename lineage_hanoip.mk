@@ -28,21 +28,20 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 PRODUCT_NAME := lineage_hanoip
 PRODUCT_DEVICE := hanoip
 PRODUCT_BRAND := motorola
-PRODUCT_MODEL := XT2135-2
+PRODUCT_MODEL := Motorola One Fusion+
 PRODUCT_MANUFACTURER := motorola
-PRODUCT_SHIPPING_API_LEVEL := 30
 
-PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+PRODUCT_AAPT_CONFIG := xxxhdpi
+PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 2520
+TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 
 # Build info
-BUILD_FINGERPRINT := "motorola/hanoip_retcn/hanoip:11/RRN31.Q3-1-11-6/f81cc:user/release-keys"
+BUILD_FINGERPRINT := "motorola/hanoip_retail/hanoip:11/RPI31.Q2-22/e73ee:user/release-keys"
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=hanoip_retcn \
-    PRIVATE_BUILD_DESC="hanoip_retcn-user 11 RRN31.Q3-1-11-6 f81cc release-keys"
+    PRODUCT_NAME=hanoip_retail \
+    PRIVATE_BUILD_DESC="hanoip_retail-user 10 RPI31.Q2-22 e73ee release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
